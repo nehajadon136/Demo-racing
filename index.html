@@ -16,7 +16,24 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
 <script>
-  // Your web app's Firebase configuration
+ // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAvaTtVVT1Kxrh_qAtmplqAGkslJufLzdM",
+  authDomain: "multiplayer-car-racing-a0986.firebaseapp.com",
+  databaseURL: "https://multiplayer-car-racing-a0986-default-rtdb.firebaseio.com",
+  projectId: "multiplayer-car-racing-a0986",
+  storageBucket: "multiplayer-car-racing-a0986.appspot.com",
+  messagingSenderId: "509208006256",
+  appId: "1:509208006256:web:96659ce2ca64d0e6306eb5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig); // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyDWruNu2MpLPCU6tzxcRm79hKqT5IVBzB8",
     authDomain: "multiplayer-racing-e2773.firebaseapp.com",
